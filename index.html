@@ -33,12 +33,17 @@
       <div class="container">
         <div class="row">
             <div class="col-4 col-sm-3 col-md-2 align-self-center">
-                   <img src="img/logo.png" class="img-fluid" />
-                </div>
+                <img src="img/logo.png" class="img-fluid" />
+            </div>
                 <div class="col">
                   <h1>NuCamp</h1>
-            <h2>a better way to camp</h2></div>
+            <h2>a better way to camp</h2>
+          </div>
+          <div class="mt-4 col-md-4 col-xl-2">
+            <a href="#reserveForm" class="btn btn-lg btn-info text-nowrap">Reserve Campsite</a>
+          </div>
         </div>
+        
       </div>
     </header>
 
@@ -102,6 +107,9 @@
             the shores of the pristine React Lake is a favorite for fly fishers.
           </p>
         </div>
+        <div class="media">
+            <img class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="React Lake"/>
+        </div>
       </div>
 
       <div class="row row-content align-items-center">
@@ -118,7 +126,49 @@
                 </div>
             </div>
       </div>
+
+      <div class="row align-items-center">
+        <div class="col-sm-6 mx-auto">
+          <div class="card">
+            <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
+            <div class="card-body">
+
+              <form id="reserveForm">
+                <div class="row form-group">
+                    <label class="col-form-label col-sm-6" for="numCampers">Number of Campers</label>
+                    <div class="col">
+                      
+                    <select class="form-control" name="numCampers" id="numCampers">
+                      <option>Select</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
+                    </select>
+                    </div>
+                  </div>
+
+                  <div class="row form-group">
+                    <label class="col-form-label col-sm-6" id="date" for="date">Date</label>
+                    <div class="col">
+                      <input class="form-control" type="date" id="date" name="date" placeholder="mm/dd/yyyy">
+                    </div>
+                  </div>
+                  <div class="row form-group">
+                      <div class="col">
+                        <button type="button" class="btn btn-primary">Search</button>
+                      </div>
+                    </div>
+
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
     </div>
+
 
     <footer class="site-footer">
       <div class="container">
